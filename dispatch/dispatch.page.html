@@ -1,0 +1,78 @@
+<ion-content>
+  <div style="width: 100vw; display: flex;justify-content: center;">
+    <div style="width: 1000px;">
+      <div class="top">
+        <div class="iconBack">
+          <ion-icon class="close" name="close"></ion-icon>
+        </div>
+
+        <div class="title">BRANCH</div>
+
+        <div class="SnS">
+          <!-- <div class="select">
+            <ion-select class="TS" placeholder="ALL">
+              <div class="option">
+                <ion-select-option value="all">ALL</ion-select-option>
+                <ion-select-option value="padding">PREPARING</ion-select-option>
+                <ion-select-option value="complete">COMPLETE</ion-select-option>
+                <ion-select-option value="process">PROCESSING</ion-select-option>
+              </div>
+            </ion-select>
+          </div> -->
+
+          <!-- <div class="search">           
+            <div class="searchBox">
+              <ion-input class="textbox" [(ngModel)]="keyword" type="text"></ion-input>
+            </div>
+            <div class="searchIcon">
+              <ion-icon class="iconS" name="search"></ion-icon>
+            </div>
+          </div> -->
+
+          <div class="addButton">
+            <ion-icon class="addButton" name="add-outline" (click)="addshipment()"></ion-icon>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="down" style="overflow-x: scroll;">
+        <div class="Dleft">
+          <div *ngFor="let b of branch,let i = index" class="branch" (click)="getShip(b.bID)">
+            <div class="b" [ngClass]="b.select? 'selected':'selectedX'" (click)="select(i)">
+              {{[b.name]}}
+            </div>
+          </div>
+        </div>
+
+        <div class="Dright" style="overflow-y: scroll;">
+          <div class="S1" *ngFor="let s of shipment" style="overflow-y: scroll;">
+            <div class="SD">
+              <div class="name">
+                <div class="S1name">
+                  {{s.shipID}}
+                </div>
+              </div>
+              <!-- <div class="color1"></div> -->
+            </div>
+
+            <div class="Detail">
+              <div class="D1">
+                <div>From: {{s.From}}</div>
+                <div>Order Date: {{[s.OrderDate | date: "dd MMM yyyy"]}}</div>
+                <div>Received Date: {{[s.Received | date: "dd MMM yyyy"]}}</div>
+              </div>
+
+              <div class="D2" *ngFor="let inv of s.inventory">
+                <div>Description: {{inv.desc}}</div>
+                <div>Reference: {{inv.ref}}</div>
+                <div>Quantity: {{inv.qty}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</ion-content>
