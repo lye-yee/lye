@@ -1,0 +1,105 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+.up{
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top:0px;
+  background-color: #5a2c8f;
+}
+
+.row1{
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1.5px solid #5a2c8f;
+  position: sticky;
+  top: 0px;
+  // background-color: #5a2c8f;
+  // color: white;
+}
+
+.search{
+  width: 80%;
+}
+
+.searchBox{
+  display: flex;
+  align-items: center;
+  border: 1.5px solid black;
+  margin: 10px;
+}
+
+.textbox {
+  margin-top: 0px;
+}
+
+.searchIcon {
+  margin: 5px;
+  border-radius: 100%;
+  width: 7vw;
+  height: 7vw;
+  margin-right: 20px;
+}
+
+.iconS {
+  border-radius: 100%;
+  width: 7vw;
+  height: 7vw;
+  margin-right: 20px;
+}
+
+.qrcode{
+  width: 10vw;
+  height: 10vw;
+}
+
+.qr{
+  width: 10vw;
+  height: 10vw;
+}
+
+.subtitle{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.selectedX{
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  // border: 1px 1px solid black;
+}
+
+.selected{
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid #5a2c8f;
+  // background-color: brown;
+  color: #5a2c8f;
+}
+
+.down{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  // justify-content: space-around;
+}
+
+.display{
+  border: 1.5px solid #5a2c8f;
+  padding: 10px;
+  justify-content: flex-start;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}

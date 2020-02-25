@@ -1,0 +1,44 @@
+.top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: #5a2c8f;
+    color: white;
+}
+
+.backicon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 7vw;
+    height: 7vw;
+    margin: 10px;
+}
+
+.back1{
+    display: flex;
+    justify-content: flex-start;
+    width: 7vw;
+    height: 7vw;
+}
+
+.all{
+    padding: 5px;
+}
+
+.Detail{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1.5px solid #5a2c8f;
+}
+
+.text{
+    margin: 2px;
+    font-size: 15px;
+    border-bottom: 1px solid #5a2c8f;
+    padding: 2px;
+}

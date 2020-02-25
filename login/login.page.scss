@@ -1,0 +1,70 @@
+ion-content{
+    // --background: linear-gradient(#5a2c8f, rgb(241, 220, 255));
+    --background:#5a2c8f;
+}
+
+.top{
+    display: flex;
+    position: sticky;
+    // background-color: #5a2c8f;
+    border-bottom: 2px solid white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin: 10px;
+}
+
+.down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 20px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.load{
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(black, 0.8);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loading{
+    width: 30vw;
+    height: 30vw;
+    object-fit: contain;
+}

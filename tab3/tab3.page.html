@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <div class="top" style="position: sticky;">
+    <div class="ttl">Setting</div>
+  </div>
+
+  <div class="dall" style="overflow-x: scroll;">
+    <div class="BD">   
+      <div class="SF">
+        Branch ID : 
+        <div>{{branch.bID}}</div>
+      </div>
+      <div class="BN">
+        Branch Name :
+        <div>{{branch.name}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="logout">
+    <div class="out">
+      <ion-icon class="close" name="close-circle-outline" (click)="out()"></ion-icon>
+    </div>
+  </div>
+
+</ion-content>

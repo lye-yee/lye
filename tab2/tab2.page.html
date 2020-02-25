@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true">
+  <div calss="up">
+    <div class="row1">
+      <div class="search">
+        <ion-searchbar class="sbox" [(ngModel)]="keyword">
+      </ion-searchbar>
+      </div>
+      <div class="qrcode">
+        <ion-icon class="qr" name="scan"></ion-icon>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="down">
+    <div class="display" *ngFor="let s of ship">
+      <div>Containers ID : {{[s.shipID]}}</div>
+      <div>Shipment ID</div>
+      <div>Qty</div>
+    </div>
+
+    <div class="display">
+      <div>Containers ID</div>
+      <div>Shipment ID</div>
+      <div>Qty</div>
+    </div>
+
+    <div class="display">
+      <div>Containers ID</div>
+      <div>Shipment ID</div>
+      <div>Qty</div>
+    </div>
+  </div>
+
+</ion-content>

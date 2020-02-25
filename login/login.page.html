@@ -1,0 +1,33 @@
+<ion-content [fullscreen]="true">
+  <div class="all">
+    <div class="top">
+      <div class="title">Log In</div>
+    </div>
+
+    <div class="dowm">
+      <div class="logo">
+        <img claas="img" src="http://www.romantika2u.com/image/cache/Company%20Logo/header-logo-295x127-295x127.jpg"
+          alt="">
+      </div>
+
+      <div class="forms">
+        <ion-item>
+          <ion-label position="floating">ID</ion-label>
+          <ion-input [(ngModel)]="Branch.bID"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input [(ngModel)]="Branch.pass" (keyup.enter)="In()" type="password"></ion-input>
+        </ion-item>
+      </div>
+
+      <ion-button shape="round" color="secondary" class="btn"  (click)="In()">Log In</ion-button>
+    </div>
+
+  </div>
+</ion-content>
+
+<div class="load" *ngIf = "loading == true">
+  <img class="loading" src="https://assets.materialup.com/uploads/d897134f-48d1-4302-b3fd-ea045f3d4151/preview.gif" alt="">
+</div>

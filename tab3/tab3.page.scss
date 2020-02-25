@@ -1,0 +1,77 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+.top{
+  display: flex;
+  position: sticky;
+  top: 0px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+  background-color: #5a2e8f;
+}
+
+.ttl{
+  display: flex;
+  position: sticky;
+  font-size: 30px;
+  color: white;
+  font-weight: 450;
+  height: 10%;
+}
+
+.dall{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  height: 80%;
+  margin-top: 30px;
+}
+
+.BD{
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid #5a2e8f;
+  padding: 10px;
+  width: 70%;
+  height: 150px;
+  margin: 10px;
+}
+
+.SF{
+  margin: 5px;
+}
+
+.BN{
+  margin: 5px;
+}
+
+.logout{
+  display: flex;
+  position: absolute;
+  position: sticky;
+  justify-content: center;
+  // height: 10%;
+  bottom: 0px;
+}
+
+.out{
+  position: absolute;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  width: 70px;
+  height: 70px;
+}
+
+.close{
+  width: 70px;
+  height: 70px;
+}

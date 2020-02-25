@@ -1,0 +1,53 @@
+<ion-content [fullscreen]="true">
+  <div calss="up">
+    <div class="row1">
+      <div class="search">
+        <div class="searchBox">
+          <div class="searchIcon">
+            <ion-icon class="iconS" name="search"></ion-icon>
+          </div>
+          <ion-input class="textbox" [(ngModel)]="keyword" type="text"></ion-input>
+        </div>
+        <!-- <ion-searchbar class="sbox" [(ngModel)]="keyword">
+        </ion-searchbar> -->
+      </div>
+      <div class="qrcode">
+        <ion-icon class="qr" name="scan"></ion-icon>
+      </div>
+    </div>
+
+    <div class="subtitle">
+      <div [ngClass]="title == 'All'?'selected':'selectedX'" (click)="title= 'All'">
+        All
+      </div>
+      <div [ngClass]="title == 'Pending'?'selected':'selectedX'" (click)="title= 'Pending'">
+        Pending
+      </div>
+      <div [ngClass]="title == 'Incomplete'?'selected':'selectedX'" (click)="title= 'Incomplete'">
+        Incomplete
+      </div>
+      <div [ngClass]="title == 'Completed'?'selected':'selectedX'" (click)="title= 'Completed'">
+        Completed
+      </div>
+    </div>
+
+  </div>
+
+  <div class="down">
+    <div class="display" *ngFor="let s of ship" (click)="view(s)">
+      <div class="D1">
+        <div>Containers ID : {{[s.conID]}}</div>
+        <div>Shipment ID :　{{[s.shipID]}}</div>
+        <div>Order Date : {{[s.OrderDate | date: "dd MMM yyyy"]}}</div>
+        <div>ETA : {{[s.ETA | date: "dd MMM yyyy"]}}</div>
+        <div>Due Date : {{[s.DueDate | date: "dd MMM yyyy"]}}</div>
+      </div>
+
+      <div class="D2">
+        <div>Total Carton : {{s.count}}</div>
+      </div>
+
+    </div>
+  </div>
+
+</ion-content>

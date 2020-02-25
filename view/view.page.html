@@ -1,0 +1,20 @@
+<ion-content>
+  <div class="top">
+    <div class="backicon">
+      <ion-icon class="back1" name="chevron-back-circle-outline" (click)="back()"></ion-icon>
+    </div>
+    <div class="title">
+      Shipment Detail
+    </div>
+  </div>
+
+  <div class="all" style="overflow-x: scroll;">
+    <div class="Detail" *ngFor="let v of view">
+      <div class="text">Barcode : {{v.barcode}}</div>
+      <div class="text">Carton : {{v.carton}}</div>
+      <div class="text">Description : </div>
+      <div class="text">{{v.desc}}</div>
+      <div class="text">Pcs Carton : {{v.pcsCarton}}</div>
+    </div>
+  </div>
+</ion-content>
